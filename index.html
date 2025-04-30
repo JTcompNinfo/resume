@@ -14,22 +14,35 @@
     <!--My CSS-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="dark-mode" id="body">
     <!--Basic nav to sections plus dark/light mode toggle-->
-      <nav class="dark-mode" id="nav">
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
+      <nav id="nav" class="dark-mode">
+        <div class="row">
+            <div class="col-8">
+                <ul>
+                    <li><a id="link-1" href="#">Personal Info</a></li>
+                    <li><a id="link-2" href="#">Education</a></li>
+                    <li><a id="link-3" href="#">Honors/Awards</a></li>
+                    <li><a id="link-4" href="#">Skills</a></li>
+                    <li><a id="link-5" href="#">Certifications</a></li>
+                    <li><a id="link-6" href="#">Extracurriculars</a></li>
+                    <li><a id="link-7" href="#">References</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <button class="btn text-nowrap float-end" id="theme"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                  </svg></button>
+            </div>
+        </div>
       </nav>
     <!--Personal info-->
     <div class="wrapper">
-        <div class="head-block dark-mode">
-            <img src="Snapchat-561639913.jpg" alt="image of me">
+        <div class="head-block" id="personal">
+            <img src="Snapchat-561639913.jpg" alt="image of me" id="me">
         </div>
-        <div class="content-block dark-mode">
+        <div class="content-block">
             <h1>Joel T. Dinovo</h1>
             <hr>
             <h2>Address: <br> 24 Walnut Ave. <br>Massena, NY 13662</h2>
@@ -39,10 +52,10 @@
         </div>
 
         <!--Education-->
-        <div class="head-block dark-mode">
+        <div class="head-block" id="education">
             <h2 class="header">Education</h2>
         </div>
-        <div class="content-block dark-mode">
+        <div class="content-block">
             <h2><b>Massena Central High School,</b> 84 Nightengale Ave, 
             <br>Massena, NY 13662 - High School Diploma 
             <br>Anticipated Graduation- June 2026</h2>
@@ -51,10 +64,10 @@
         
 
         <!--Honors/Awards-->
-        <div class="head-block dark-mode">
+        <div class="head-block" id="awards">
             <h2 class="header">Honors/Awards</h2>
         </div>
-        <div class="content-block dark-mode">
+        <div class="content-block">
             <ul>
                 <li><h2>Seaway Career & Technical Education Center Honor Roll</h2></li>
                 <li><h2>Massena Central High School Honor Roll</h2></li>
@@ -62,10 +75,10 @@
         </div>
 
         <!--Skills-->
-        <div class="head-block dark-mode">
+        <div class="head-block" id="skills">
             <h2 class="header">Skills</h2>
         </div>
-        <div class="content-block dark-mode">
+        <div class="content-block">
             <ul>
                 <li><h2>Communaction</h2></li>
                 <li><h2>Teamwork</h2></li>
@@ -78,20 +91,20 @@
         
 
         <!--Certifications-->
-        <div class="head-block dark-mode">
+        <div class="head-block" id="certifications">
             <h2 class="header">Certifications</h2>
         </div>
-        <div class="content-block dark-mode">
+        <div class="content-block">
             <ul>
                 <li><h2>Emergency First Aid Certified</h2></li>
             </ul>
         </div>
 
         <!--Extracurriculars-->
-        <div class="head-block dark-mode">
+        <div class="head-block" id="extracurricular">
             <h2 class="header">Extracurriculars</h2>
         </div>
-        <div class="content-block dark-mode">
+        <div class="content-block">
             <ul>
                 <li><h2>Dungeons And Dragons at Massena Public Libary <ul><li>I make use of Communction, teamwork, and creative solutions to problems at all times. I have experience of running a campaign, so I know how to instruct other and explain in detail. I have also played as a player which means I have to listen and come up to solutions to problems on the fly.</li></ul> </h2></li>
                 <br>
@@ -100,10 +113,10 @@
         </div>
 
         <!--References-->
-        <div class="head-block dark-mode">
+        <div class="head-block" id="references">
             <h2 class="header">References</h2>
         </div>
-        <div class="content-block dark-mode">
+        <div class="content-block">
             <h2>Lexi Marolf - (315) 705-7175</h2>
             <h2>David Wells - (315) 353-2293 Ext. 20121</h2>
         </div>

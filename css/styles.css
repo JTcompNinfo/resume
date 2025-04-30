@@ -33,16 +33,20 @@ nav  li a {
     padding: 14px 16px;
     text-decoration: none;
   }
-  
-nav  li a:hover {
-    
-  }
+
+.btn {
+  padding: 10px 40px;
+  display: center;
+  position: left;
+}
+
 .head-block {
     
     height: 500px;
     align-items: center;
     align-content: center;
     text-align: center;
+    border: 5px dashed;
 }
 
 .content-block {
@@ -53,6 +57,7 @@ nav  li a:hover {
     align-items: center;
     align-content: center;
     text-align: center;
+    border: 5px dashed;
 }
 
 img {
@@ -84,16 +89,30 @@ hr {
 
 /*for the dark mode or light mode themes*/
 .dark-mode {
-    color:#d7bcad ;
+    color:#d7bcad !important;
     background-color: #452f47 ;
-    border: 5px dashed  #d7bcad;
+    border:#d7bcad;
+}
+.dark-mode a {
+  color: #d7bcad;
+}
+.dark-mode .btn {
+  color:#d7bcad !important;
 }
 
 
 .light-mode {
-    color:#452f47 ;
-    border: 5px dashed  #452f47;
+    color:#452f47 !important;
+    border:#452f47;
     background-color: #d7bcad ;
+}
+
+.light-mode a {
+  color: #452f47;
+}
+
+.light-mode .btn {
+  color:#452f47 !important;
 }
 
 .wrapper {
